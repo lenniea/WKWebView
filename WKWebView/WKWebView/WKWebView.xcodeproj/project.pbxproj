@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,23 @@
 		86EDE9A52233D16B000F1B7C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EDE9A42233D16B000F1B7C /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		B13E67562E051E8100C8114B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.rkassets;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# realitytool\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		86A0A69822382747008A6411 /* LocalWebAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LocalWebAssets; sourceTree = "<group>"; };
-		86EDE98A2233A9E3000F1B7C /* WKWebViewLocalAssetsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewLocalAssetsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EDE98A2233A9E3000F1B7C /* WKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EDE98D2233A9E3000F1B7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86EDE98E2233A9E3000F1B7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		86EDE9962233A9E7000F1B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,7 +56,7 @@
 		86EDE9812233A9E3000F1B7C = {
 			isa = PBXGroup;
 			children = (
-				86EDE98C2233A9E3000F1B7C /* WKWebViewLocalAssetsObjC */,
+				86EDE98C2233A9E3000F1B7C /* WKWebView */,
 				86EDE98B2233A9E3000F1B7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +64,12 @@
 		86EDE98B2233A9E3000F1B7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86EDE98A2233A9E3000F1B7C /* WKWebViewLocalAssetsObjC.app */,
+				86EDE98A2233A9E3000F1B7C /* WKWebView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		86EDE98C2233A9E3000F1B7C /* WKWebViewLocalAssetsObjC */ = {
+		86EDE98C2233A9E3000F1B7C /* WKWebView */ = {
 			isa = PBXGroup;
 			children = (
 				86EDE98D2233A9E3000F1B7C /* AppDelegate.h */,
@@ -68,27 +82,28 @@
 				86EDE99C2233A9E7000F1B7C /* main.m */,
 				86A0A69822382747008A6411 /* LocalWebAssets */,
 			);
-			path = WKWebViewLocalAssetsObjC;
+			path = WKWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86EDE9892233A9E3000F1B7C /* WKWebViewLocalAssetsObjC */ = {
+		86EDE9892233A9E3000F1B7C /* WKWebView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86EDE9A02233A9E7000F1B7C /* Build configuration list for PBXNativeTarget "WKWebViewLocalAssetsObjC" */;
+			buildConfigurationList = 86EDE9A02233A9E7000F1B7C /* Build configuration list for PBXNativeTarget "WKWebView" */;
 			buildPhases = (
 				86EDE9862233A9E3000F1B7C /* Sources */,
 				86EDE9872233A9E3000F1B7C /* Frameworks */,
 				86EDE9882233A9E3000F1B7C /* Resources */,
 			);
 			buildRules = (
+				B13E67562E051E8100C8114B /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
-			name = WKWebViewLocalAssetsObjC;
+			name = WKWebView;
 			productName = WKWebViewLocalAssetsObjC;
-			productReference = 86EDE98A2233A9E3000F1B7C /* WKWebViewLocalAssetsObjC.app */;
+			productReference = 86EDE98A2233A9E3000F1B7C /* WKWebView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,15 +112,16 @@
 		86EDE9822233A9E3000F1B7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Sergey Vasilevkin";
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1620;
+				ORGANIZATIONNAME = "Lennie Araki";
 				TargetAttributes = {
 					86EDE9892233A9E3000F1B7C = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 86EDE9852233A9E3000F1B7C /* Build configuration list for PBXProject "WKWebViewLocalAssetsObjC" */;
+			buildConfigurationList = 86EDE9852233A9E3000F1B7C /* Build configuration list for PBXProject "WKWebView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86EDE9892233A9E3000F1B7C /* WKWebViewLocalAssetsObjC */,
+				86EDE9892233A9E3000F1B7C /* WKWebView */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +203,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -198,6 +215,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -246,6 +264,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -257,6 +276,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -278,12 +298,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WKWebViewLocalAssetsObjC/Info.plist;
+				INFOPLIST_FILE = WKWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SergeyVasilevkin.WKWebViewLocalAssetsObjC;
+				PRODUCT_BUNDLE_IDENTIFIER = LennieAraki.WKWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -294,12 +315,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WKWebViewLocalAssetsObjC/Info.plist;
+				INFOPLIST_FILE = WKWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SergeyVasilevkin.WKWebViewLocalAssetsObjC;
+				PRODUCT_BUNDLE_IDENTIFIER = LennieAraki.WKWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86EDE9852233A9E3000F1B7C /* Build configuration list for PBXProject "WKWebViewLocalAssetsObjC" */ = {
+		86EDE9852233A9E3000F1B7C /* Build configuration list for PBXProject "WKWebView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86EDE99E2233A9E7000F1B7C /* Debug */,
@@ -317,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86EDE9A02233A9E7000F1B7C /* Build configuration list for PBXNativeTarget "WKWebViewLocalAssetsObjC" */ = {
+		86EDE9A02233A9E7000F1B7C /* Build configuration list for PBXNativeTarget "WKWebView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86EDE9A12233A9E7000F1B7C /* Debug */,
